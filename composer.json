@@ -1,0 +1,20 @@
+{
+    "name": "tingv/douban-php-sdk",
+    "description": "豆瓣 PHP SDK",
+    "homepage": "https://github.com/tingv/douban-php-sdk",
+    "type": "library",
+    "require": {
+        "php": ">=5.5",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {"Douban\\": "src/"}
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tingv",
+            "email": "api-master@douban.com"
+        }
+    ]
+}
