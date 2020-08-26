@@ -1,7 +1,7 @@
 {
     "name": "tingv/douban-php-sdk",
     "description": "豆瓣 PHP SDK",
-    "homepage": "https://github.com/tingv/douban-php-sdk",
+    "homepage": "https://www.douban.com",
     "type": "library",
     "require": {
         "php": ">=5.5",
