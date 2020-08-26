@@ -13,6 +13,7 @@ class Request
     public function __construct(Config $config)
     {
         $this->config = $config;
+        $this->timestamp = time();
     }
 
     private function createSignature($url, $method, $access_token)
@@ -30,7 +31,6 @@ class Request
     {
         $method = strtoupper($method);
         $access_token = $this->config->access_token;
-        $this->timestamp = time();
         $signature = $this->createSignature($url, $method, $access_token);
         $params = array_merge(
             $params,
