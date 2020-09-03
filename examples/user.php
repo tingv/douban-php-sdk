@@ -8,7 +8,7 @@ $user = $Douban->user();
 $auth_info = $user->token('Your username', 'Your password');
 
 // 如果接口需要授权访问，先设置访问令牌
-$Douban->config->setAccessToken($auth_info->access_token);
+$Douban->config->access_token = $auth_info->access_token;
 
 // 获取用户信息
 $user_info = $user->info($auth_info->douban_user_id);
