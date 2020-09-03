@@ -24,36 +24,6 @@ class Config
         $this->udid = $udid;
     }
 
-    // 如果请求的接口需要登录授权，需先设置 access_token
-    public function setAccessToken($access_token)
-    {
-        $this->access_token = $access_token;
-    }
-
-    // 如果 API 地址变了，可以手动设置
-    public function setBaseUrl($base_url)
-    {
-        $this->base_url = $base_url;
-    }
-
-    // 如果抓到的 douban_udid 不是上面的默认值，可以手动设置
-    public function setDoubanUdid($douban_udid)
-    {
-        $this->douban_udid = $douban_udid;
-    }
-
-    // 如果抓 API 的客户端不是上面的默认值，可手动设置
-    public function setVersion($version)
-    {
-        $this->version = $version;
-    }
-
-    // 如果抓 API 的客户端不是上面的默认值，可手动设置
-    public function setV($_v)
-    {
-        $this->_v = $_v;
-    }
-
     public function accessTokenUrl()
     {
         return '/service/auth2/token';
@@ -79,9 +49,14 @@ class Config
         return '/api/v2/search/movie';
     }
 
-    public function __get($key)
+    public function __get($name)
     {
-        return $this->$key;
+        return $this->$name;
+    }
+
+    public function __set($name, $value) 
+    {
+        $this->$name = $value;
     }
 
 }
