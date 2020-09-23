@@ -15,6 +15,6 @@ composer require tingv/douban-php-sdk
 
 ## Disclaimer
 
-1. 此项目只是本人学习如何在 [Packagist](https://packagist.org/) 发布 Composer 包所建，任何人用之做任何事皆与我无关！
+1. 此项目只是本人学习如何在 [Packagist](https://packagist.org/packages/tingv/douban-php-sdk) 发布 Composer 包所建，任何人用之做任何事皆与我无关！
 
 2. 如果你非要用，那 `client_id` 、`client_secret` 等信息得自己去搞，别来找我。
