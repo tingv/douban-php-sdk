@@ -46,7 +46,7 @@ class Request
         );
 
         $headers = [
-            'User-Agent' => 'api-client/0.1.3 com.douban.frodo/6.41.0 iOS/13.5 model/iPhone12,1 network/wifi',
+            'User-Agent' => 'api-client/0.1.3 com.douban.frodo/7.35.0 iOS/14.3 model/iPhone12,1 network/wifi',
             'Accept-Language' => 'zh-Hans-CN;q=1, en-CN;q=0.9',
         ];
 
